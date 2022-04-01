@@ -1,8 +1,4 @@
 // Specific CSS for your home-page
-body {
-  font-family: $mont;
-}
-
 #home-page {
   // padding: 100px;
   font-family: $mont;
@@ -30,24 +26,33 @@ a {
   display: flex;
   flex-direction: column;
 
-  #name {
-    display: flex;
-    justify-content: center;
+  #name-title {
+    margin-top: auto;
+    margin-bottom: auto;
 
-    // h1 {
+    #name {
+      display: flex;
+      justify-content: center;
       color: white;
       font-weight: 100;
+      font-family: $mont;
       font-size: 80px;
-    // }
-  }
+    }
+  
+    #job-title {
+      color: white;
+      border: 1px solid white;
+      // padding: 5px 20px;
+      display: flex;
+      justify-content: center;
+      margin: 100px;
+      font-weight: 100;
+      font-family: $mont;
+      h2 {
+        margin: 5px 20px;
+      }
 
-  #job-title {
-    color: white;
-    border: 2px solid white;
-    padding: 5px 20px;
-    display: flex;
-    justify-content: center;
-    margin: 100px;
+    }
   }
 }
 
