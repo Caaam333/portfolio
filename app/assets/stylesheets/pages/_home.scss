@@ -57,11 +57,30 @@ a {
 }
 
 #about {
+  padding: 100px;
   h1 {
+    color: $darker;
 
+  }
+  .line {
+    border-top: 2px solid $marron;
+    width: 100px;
+    padding-bottom: 25px;
   }
 
   p {
     text-align: justify;
+  }
+
+}
+
+.first-part {
+  display: flex;
+  
+  img {
+    margin-top: 100px;
+    width: auto;
+    height: 340px;
+    object-fit: cover;
   }
 }
