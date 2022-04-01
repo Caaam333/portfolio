@@ -14,3 +14,10 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+
+import { initHide } from '../plugins/init_hide';
+
+document.addEventListener('turbolinks:load', () => {
+  initHide();
+})
