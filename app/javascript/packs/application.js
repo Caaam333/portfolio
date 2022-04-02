@@ -14,3 +14,12 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
+
+
+import { initHide } from '../plugins/init_hide';
+import {initScrollTo} from '../plugins/init_scroll_to'
+
+document.addEventListener('turbolinks:load', () => {
+  initHide();
+  initScrollTo();
+})
