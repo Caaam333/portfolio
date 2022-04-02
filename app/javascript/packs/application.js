@@ -17,9 +17,11 @@ import "bootstrap"
 
 
 import { initHide } from '../plugins/init_hide';
-import {initScrollTo} from '../plugins/init_scroll_to'
+import {initScrollTo} from '../plugins/init_scroll_to';
+import { initMap } from '../plugins/init_map';
 
 document.addEventListener('turbolinks:load', () => {
   initHide();
   initScrollTo();
+  initMap();
 })
