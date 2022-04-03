@@ -98,6 +98,7 @@ a {
     width: auto;
     height: 340px;
     object-fit: cover;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -173,6 +174,8 @@ p.row.active, p.row2.active {
 
   img {
     width: 500px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
   }
 }
 
@@ -184,6 +187,7 @@ p.row.active, p.row2.active {
 
 .candi-content, .pets-content {
   max-width: 650px;
+  margin: 0px 25px;
 }
 
 #map {

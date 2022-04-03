@@ -1,5 +1,5 @@
 <div id="home-page">
-  <div id="header">
+  <div id="header" class="header">
     <%= link_to "ENGLISH", english_path , id:"language-link"  %>
     <div id="name-title">
       <h1 id="name">Camille LAGUERRE</h1>
@@ -40,8 +40,8 @@
       <div class="line"></div>
       <div class="about-content">
         <p class="row">
-          Je suis Camille, j'ai grandit en île-de-France, passionnée, la danse a rythmé ma vie. 
-          À mes 30 ans, je me lance un nouveau défit : passer la frontière Suisse et repartir de zéro. <br/>
+          Je suis Camille, j'ai grandi en Île-de-France, passionnée, la danse a rythmé ma vie. 
+          À mes 30 ans, je me lance un nouveau défi : passer la frontière Suisse et repartir de zéro. <br/>
           Nouveau pays, nouvel environnement, pourquoi ne pas se fixer de nouveaux objectifs ?
           Après 5 ans à la SNCF, je me sentais prête à bouleverser ma carrière et me voici lancée dans 
           la formation du Wagon pour être développeuse web.
@@ -110,8 +110,4 @@
       </ul>
 
   </div>
-<div style="width: 100%; height: 600px;"
-  data-controller="mapbox"
-  data-mapbox-markers-value="<%= @markers.to_json %>"
-  data-mapbox-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
 </div>
