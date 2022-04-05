@@ -15,11 +15,19 @@ ActiveStorage.start()
 import "controllers"
 import "bootstrap"
 
-
+import { initAbout } from '../plugins/init_about';
 import { initHide } from '../plugins/init_hide';
-import {initScrollTo} from '../plugins/init_scroll_to'
+import { initScrollTo } from '../plugins/init_scroll_to';
+import { initMap } from '../plugins/init_map';
+// import { initSkills } from '../plugins/init_skills';
+
+
 
 document.addEventListener('turbolinks:load', () => {
+  initAbout();
   initHide();
   initScrollTo();
+  initMap();
+  // initSkills();
+  AOS.init();
 })

@@ -1,17 +1,12 @@
 const initHide = () => {
-  window.addEventListener('scroll', () => {
-    const content = document.querySelector('.row');
-    const contentPosition = content.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
+  const logoAddress = document.getElementById('address');
+  const address = document.getElementById('ad');
 
-    if(contentPosition < screenPosition) {
-      content.classList.add('active');
-    } else {
-      content.classList.remove('active');
-    }
+
+  logoAddress.addEventListener('mouseover', () => {
+    address.target.style.display = "block";
+
   })
-
-
 }
 
 export { initHide };
