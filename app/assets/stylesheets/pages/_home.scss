@@ -20,10 +20,7 @@ a {
     opacity: 0,6;
   }
 }
-#language-link {
-  color: $marron;
-  text-align: right;
-}
+
 
 #header {
   background: url("header.png") no-repeat;
@@ -34,6 +31,31 @@ a {
   background-position: center;
   display: flex;
   flex-direction: column;
+
+  .en-fr {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-top: 4px;
+    
+    img {
+      width: 30px;
+      text-align: right;
+      margin: 0px 3px;
+      padding: 0px 2px;
+      border: 1px solid transparent;
+    }
+
+    a.active {
+      img {
+        width: 35px;
+        padding: 0px 2px;
+        border: 1px solid white;
+      }
+      
+    }
+  }
+  
 
   #name-title {
     margin-top: auto;
@@ -130,24 +152,43 @@ p.row.active, p.row2.active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: space-between;
 
   h1 {
     padding-top: 20px;
   }
-
+  
   .contact-list {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    ul {
+      display: flex;
+      align-items: center;
+    }
     img {
-      // width: 30px;
-      height: 30px;
+      height: 50px;
     }
     li {
       display: inline;
-      text-align: center;
-      padding: 2px ;
-      margin: 0;
-      width: 19%;
+      margin: 5px;
+    }
+    #address:hover {
+      #ad.cache {
+        display: block;
       }
+    }
   }
+}
+#address:hover {
+  width: 100px;
+}
+#ad {
+  display: none;
+  align-items: center;
 }
 
 #project {
@@ -193,3 +234,126 @@ p.row.active, p.row2.active {
 #map {
   height: 500px;
 }
+
+#cv {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  
+  #cv-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: $darker;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    color: $darker;
+    font-weight: 500;
+    border: 2px solid $darker;
+    border-radius: 4px;
+    padding: 10px 25px;
+    width: 250px;
+    background-color: white;
+  }
+
+  img {
+    height: 100px;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: inline;
+    margin: 5px;
+  }
+  
+}
+
+
+// ____________________________________________________________________________________________________________________
+
+
+// :root {
+//   --skills-width: 80vw;
+//   --skills-height: 20vh;
+//   /* --skills-elements: 12; */ /* defined with JavaScript */
+//   --skills-elements-displayed: 5;
+//   --skills-element-width: calc(var(--skills-width) / var(--skills-elements-displayed));
+//   --skills-animation-duration: calc(var(--skills-elements) * 3s);
+// }
+
+// .skills {
+//   width: var(--skills-width);
+//   height: var(--skills-height);
+//   background-color: transparent;
+//   color: #eee;
+//   overflow: hidden;
+//   position: relative;
+// }
+// .skills:before, .skills:after {
+//   position: absolute;
+//   top: 0;
+//   width: 10rem;
+//   height: 100%;
+//   content: "";
+//   z-index: 1;
+// }
+// .skills:before {
+//   left: 0;
+//   background: linear-gradient(to right, transparent 0%, transparent 100%);
+// }
+// .skills:after {
+//   right: 0;
+//   background: linear-gradient(to left, transparent 0%, transparent 100%);
+// }
+// .skills-content {
+//   list-style: none;
+//   height: 100%;
+//   display: flex;
+//   animation: scrolling var(--skills-animation-duration) linear infinite;
+// }
+// /* .skills-content:hover {
+//   animation-play-state: paused;
+// } */
+// @keyframes scrolling {
+//   0% { transform: translateX(0); }
+//   100% { transform: translateX(calc(-1 * var(--skills-element-width) * var(--skills-elements))); }
+// }
+// .skills-content li {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   /* text-align: center; */
+//   flex-shrink: 0;
+//   width: var(--skills-element-width);
+//   max-height: 100%;
+//   font-size: calc(var(--skills-height)*3/4); /* 5rem; */
+//   white-space: nowrap;
+// }
+
+// .skills-content li img {
+//   // width: 100%;
+//   height: 100%;
+//   // border: 2px solid #eee;
+// }
+
+// @media (max-width: 600px) {
+//   html { font-size: 12px; }
+//   :root {
+//     --skills-width: 100vw;
+//     --skills-height: 16vh;
+//     --skills-elements-displayed: 3;
+//   }
+//   .skills:before, .skills:after { width: 5rem; }
+// }
+
+// ____________________________________________________________________________________________________________________

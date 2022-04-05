@@ -1,9 +1,12 @@
 <div id="home-page">
-  <div id="header" class="header">
-    <%= link_to "FRANÇAIS", root_path , id:"language-link"  %>
+  <div id="header">
+    <div class="en-fr">
+      <%= link_to image_tag("france.png"), root_path  %>
+      <%= link_to image_tag("usa.png"), english_path, class:"active" %>
+    </div>
     <div id="name-title">
       <h1 id="name">Camille LAGUERRE</h1>
-      <h2 id="job-title">FRONT-END DEVELOPER JUNIOR</h2>
+      <h2 id="job-title">WEB DEVELOPER JUNIOR</h2>
     </div>
     <div class="about-btn">
       <svg version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -36,7 +39,7 @@
   </div>
   <div class="first-part">
     <div id="about">
-      <h1>À PROPOS</h1>
+      <h1>ABOUT</h1>
       <div class="line"></div>
       <div class="about-content">
         <p class="row">
@@ -45,11 +48,11 @@
           New country, new environment, why not set new goals?
           After 5 years at the SNCF, I felt ready to turn my career upside down and here I am launched in 
           Le Wagon training to be a web developer.
-          </p>
-          <p class="row2">
+        </p>
+        <p class="row2">
           These 6 months of training allowed me to develop my technical knowledge and my listening skills. 
-  It bothers me and makes me want to learn even more.
-  I am now ready to acquire a first professional experience.
+          It bothers me and makes me want to learn even more.
+          I am now ready to acquire a first professional experience.
         </p>
       </div>
     </div>
@@ -59,18 +62,18 @@
   </div>
   <div class="second-part">
     <div id="project">
-      <h1>PROJETS</h1>
+      <h1>PROJECTS</h1>
       <div class="line"></div>
       <div class="project-picture">
         <div class="candiloc">
-          <%= image_tag "CANDILOC.png" %> 
+          <a href="https://candiloc.herokuapp.com/" target="_blank"><%= image_tag "CANDILOC.png" %></a>
           <div class="candi-content">
             <h3>CANDILOC</h3>
-            <h4>Louez votre candidat préféré.</h4>
+            <h4>Rent your favorite politician.</h4>
             <p>
-              OBJECTIF : création d'un site de location type "airbnb" avec un tout autre thème.
+              GOAL : creation of an "airbnb" type rental site with a completely different theme.
               <br/>
-              Application web réalisée en équipe lors de ma formation au Wagon.<br/>
+              Web application created as a team during my training at Le Wagon.<br/>
             </p>
           </div>
         </div>
@@ -80,9 +83,9 @@
             <h3>PLACE FOR PETS</h3>
             <h4>Vous partez en vacances ? Eux aussi.</h4>
             <p>
-              OBJECTIF : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
+              GOAL : Realization of an application which calculates in real time the number of places remaining in pensions at a short distance of a journey according to the type of animal.
               <br/>
-              Application web réalisée en équipe lors de ma formation au Wagon.<br/>
+              Web application created as a team during my training at Le Wagon.<br/>
             </p>
           </div>
           <%= image_tag "PLACE_FOR_PETS.png" %> 
@@ -90,24 +93,54 @@
       </div>
     </div>
   </div>
-  <div class="first-part">
-    <div id="about">
-      <h1>CURRICULUM VITAE</h1>
-      <div class="line"></div>
-        
-        
+  <div class="third-part">
+    <div id="cv">
+      <div>
+        <h1>CURRICULUM VITAE</h1>
+        <div class="line"></div>
+      </div>
+      <div class="skills">
+        <ul class="skills-content">
+          <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
+          <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
+          <li id="html"><%= image_tag "logo-html.png" %></a></li>
+          <li id="css"><%= image_tag "logo-css.png" %></a></li>
+          <li id="js"><%= image_tag "logo-js.png" %></a></li>
+          <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
+          <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
+          <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
+          <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
+          <li id="html"><%= image_tag "logo-html.png" %></a></li>
+          <li id="css"><%= image_tag "logo-css.png" %></a></li>
+          <li id="js"><%= image_tag "logo-js.png" %></a></li>
+          <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
+          <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
+        </ul>
+      </div>  
+      <div id="cv-link" >
+        <p>Interested ?</p>
+        <%= link_to "DOWNLOAD MY CV" ,:action => :download_pdf_en, :file_name => "TEST.pdf" %>    
+      </div>
     </div>
     
   </div>
-  <div id="footer">
-      <h1>CONTACT</h1>
-      <div class="line"></div>
-      <ul class="contact-list">
-        <li id="address"><%= image_tag "address.png" %></li>
-        <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
-        <li id="email"><a href="#"><%= image_tag "email.png" %></a></li>
-        <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
-      </ul>
-
+  <div class="last-part">
+    <div id="footer">
+      <div>
+        <h1>CONTACT</h1>
+        <div class="line"></div>
+      </div>
+      <div id="ad" class="cache">
+        adresse-mail@gmail.com
+      </div>
+      <div class="contact-list">
+        <ul>
+          <li id="address"><%= image_tag "address.png" %></li>
+          <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
+          <li id="email"><a href="#"><%= image_tag "email.png" %></a></li>
+          <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
