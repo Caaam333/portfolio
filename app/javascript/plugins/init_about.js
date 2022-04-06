@@ -1,6 +1,6 @@
 const initAbout = () => {
   window.addEventListener('scroll', () => {
-    const content = document.querySelector('.row');
+    const content = document.querySelector('.row1');
     const content2 = document.querySelector('.row2');
     const contentPosition = content.getBoundingClientRect().top;
     const screenPosition = window.innerHeight;

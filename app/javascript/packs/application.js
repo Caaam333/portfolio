@@ -15,19 +15,18 @@ ActiveStorage.start()
 import "controllers"
 import "bootstrap"
 
-import { initAbout } from '../plugins/init_about';
-import { initHide } from '../plugins/init_hide';
+// import { initAbout } from '../plugins/init_about';
+// import { initHide } from '../plugins/init_hide';
 import { initScrollTo } from '../plugins/init_scroll_to';
-import { initMap } from '../plugins/init_map';
 // import { initSkills } from '../plugins/init_skills';
-
+import { initFooter } from '../plugins/init_footer';
 
 
 document.addEventListener('turbolinks:load', () => {
-  initAbout();
-  initHide();
+  // initAbout();
+  // initHide();
   initScrollTo();
-  initMap();
   // initSkills();
+  initFooter();
   AOS.init();
 })
