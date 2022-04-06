@@ -8,8 +8,10 @@ const initFooter = () => {
   address.style.display = "none";
   email.style.display = "none";
   
-  // if (age >= 18) {
   logoAddress.addEventListener('mouseover', () => {
+    address.style.display = "block";
+  })
+  logoAddress.addEventListener('click', () => {
     address.style.display = "block";
   })
   logoAddress.addEventListener('mouseleave', () => {
@@ -19,9 +21,13 @@ const initFooter = () => {
   logoEmail.addEventListener('mouseover', () => {
     email.style.display = "block";
   })
-  logoEmail.addEventListener('mouseleave', () => {
-    email.style.display = "none";
+  logoEmail.addEventListener('click', () => {
+    email.style.display = "block";
   })
+
+  // logoEmail.addEventListener('mouseleave', () => {
+  //   email.style.display = "none";
+  // })
 }
 
 // const adBlock = () => {
