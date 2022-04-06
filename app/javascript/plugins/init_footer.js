@@ -5,23 +5,36 @@ const initFooter = () => {
   const logoEmail = document.querySelector('#email > img');
   const email = document.querySelector('.mail-content > p');
 
-  logoAddress.addEventListener('click', () => {
-    // alert("Hello! I am an alert box!!");
-    address.target.style.display = "block";
-    // address.target.style.display = "block";
+  address.style.display = "none";
+  email.style.display = "none";
+  
+  // if (age >= 18) {
+  logoAddress.addEventListener('mouseover', () => {
+    address.style.display = "block";
+  })
+  logoAddress.addEventListener('mouseleave', () => {
+    address.style.display = "none";
   })
 
   logoEmail.addEventListener('mouseover', () => {
-    // alert("Hello! I am an alert box!!");
-    // address.target.style.display = "block";
+    email.style.display = "block";
   })
-  // const address = document.getElementById('ad');
-
-
-  // logoAddress.addEventListener('mouseover', () => {
-  //   address.target.style.display = "block";
-
-  // })
+  logoEmail.addEventListener('mouseleave', () => {
+    email.style.display = "none";
+  })
 }
+
+// const adBlock = () => {
+//   address.style.display = "block";
+// }
+// const adNone =  () => {
+//   address.style.display = "none";
+// }
+// const emBlock = () => {
+//   email.style.display = "block";
+// }
+// const emNone =  () => {
+//   email.style.display = "none";
+// }
 
 export { initFooter };
