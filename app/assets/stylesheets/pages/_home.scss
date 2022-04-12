@@ -155,16 +155,18 @@ a {
     object-fit: cover;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin: 20px;
+
   }
 
   p {
     // display: flex;
     // flex-wrap: wrap;
-    max-height: 250px;
-    max-width: 700px;
-    column-count: 2;
-    column-width: 340px;
-    column-gap: 20px;
+   
+    // column-count: 2;
+    // column-width: 340px;
+    // column-gap: 20px;
+    columns: 2 12em;
     text-align: justify;
   }
 }
@@ -187,6 +189,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  padding: 20px;
+  // max-height: 250px;
+  max-width: 44em;
+  width: 100vw;
+  height: auto;
   // justify-content: center;
   // flex-direction: column;
 
