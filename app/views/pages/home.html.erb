@@ -37,113 +37,116 @@
       </svg>
     </div>
   </div>
-  <div class="first-part">
-    <div id="about" class="title">
-      <h1>À PROPOS</h1>
-      <div class="line"></div>
-      <div class="about-content" data-aos="zoom-out-down">
-        <p class="">
-          Je suis Camille, j'ai grandi en Île-de-France, passionnée, la danse a rythmé ma vie. 
-          À mes 30 ans, je me lance un nouveau défi : passer la frontière Suisse et repartir à zéro. <br/>
-          Nouveau pays, nouvel environnement, pourquoi ne pas se fixer de nouveaux objectifs ?
-          Après 5 ans à la SNCF, je me sentais prête à bouleverser ma carrière et me voici lancée dans 
-          la formation du Wagon pour être développeuse web.
-          </p>
+  <div class="centeer">
+    <div class="first-part">
+      <div>
+        <div id="about" class="title">
+          <h1>À PROPOS</h1>
+          <div class="line"></div>
+        </div>
+        <div class="about-content" data-aos="zoom-out-down">
           <p class="">
-          Ces 6 mois de formation m'ont permis de développer mon savoir technique et mon sens de l'écoute.
-          Cela me passionne et me donne envie d'en apprendre encore plus.
-          Je suis maintenant prête à acquérir une première expérience professionnelle.
-        </p>
+            Je suis Camille, j'ai grandi en Île-de-France, passionnée, la danse a rythmé ma vie. 
+            À mes 30 ans, je me lance un nouveau défi : passer la frontière Suisse et repartir à zéro. <br/>
+            Nouveau pays, nouvel environnement, pourquoi ne pas se fixer de nouveaux objectifs ?
+            
+            Après 5 ans à la SNCF, je me sentais prête à bouleverser ma carrière et me voici lancée dans 
+            la formation du Wagon pour être développeuse web.
+            Ces 6 mois de formation m'ont permis de développer mon savoir technique et mon sens de l'écoute.
+            Cela me passionne et me donne envie d'en apprendre encore plus.
+            Je suis maintenant prête à acquérir une première expérience professionnelle.
+          </p>
+        </div>
+      </div>
+      <div class="profile-picture">
+        <%= image_tag "my_face.jpg" %>
       </div>
     </div>
-    <div class="profile-picture">
-      <%= image_tag "my_face.jpg" %>
-    </div>
-  </div>
-  <div class="second-part">
-    <div id="project" class="title">
-      <h1>PROJETS</h1>
-      <div class="line"></div>
-      <div class="project-picture">
-        <div class="candiloc">
-          <div>
-            <a href="https://candiloc.herokuapp.com/" target="_blank"><%= image_tag "CANDILOC.png" %></a>
+    <div class="second-part">
+      <div id="project" class="justify">
+        <div class="title">
+          <h1>PROJETS</h1>
+          <div class="line"></div>
+        </div>
+        <div class="project-picture">
+          <div class="candiloc">
+            <div>
+              <a href="https://candiloc.herokuapp.com/" target="_blank"><%= image_tag "CANDILOC.png" %></a>
+            </div>
+            <div class="candi-content">
+              <h3>CANDILOC</h3>
+              <h4>Louez votre candidat politique préféré.</h4>
+              <p>
+                OBJECTIF : création d'un site de location type "airbnb" avec un tout autre thème.
+                <br/>
+                Application web réalisée en équipe lors de ma formation au Wagon.<br/>
+              </p>
+            </div>
           </div>
-          <div class="candi-content">
-            <h3>CANDILOC</h3>
-            <h4>Louez votre candidat politique préféré.</h4>
-            <p>
-              OBJECTIF : création d'un site de location type "airbnb" avec un tout autre thème.
-              <br/>
-              Application web réalisée en équipe lors de ma formation au Wagon.<br/>
-            </p>
+          <div class="line"></div>
+          <div class="pets">
+            <div class="pets-content">
+              <h3>PLACE FOR PETS</h3>
+              <h4>Vous partez en vacances ? Eux aussi.</h4>
+              <p>
+                OBJECTIF : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
+                <br/>
+                Application web réalisée en équipe lors de ma formation au Wagon.<br/>
+              </p>
+            </div>
+            <div>
+              <%= image_tag "PLACE_FOR_PETS.png" %> 
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="third-part">
+      <div id="cv" class="title">
+        <h1>CURRICULUM VITAE</h1>
         <div class="line"></div>
-        <div class="pets">
-          <div class="pets-content">
-            <h3>PLACE FOR PETS</h3>
-            <h4>Vous partez en vacances ? Eux aussi.</h4>
-            <p>
-              OBJECTIF : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
-              <br/>
-              Application web réalisée en équipe lors de ma formation au Wagon.<br/>
-            </p>
-          </div>
-          <div>
-            <%= image_tag "PLACE_FOR_PETS.png" %> 
-          </div>
+        <div class="skills">
+          <ul class="skills-content" data-aos="zoom-in-up">
+            <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
+            <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
+            <li id="html"><%= image_tag "logo-html.png" %></a></li>
+            <li id="css"><%= image_tag "logo-css.png" %></a></li>
+            <li id="js"><%= image_tag "logo-js.png" %></a></li>
+            <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
+            <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
+          </ul>
+        </div>  
+        <div id="cv-link" >
+          <p>Mon profil vous intéresse ?</p>
+          <%= link_to "TÉLÉCHARGEZ LE CV" ,:action => :download_pdf_fr, :file_name => "TEST.pdf" %>    
         </div>
       </div>
     </div>
-  </div>
-  <div class="third-part">
-    <div id="cv" class="title">
-      <h1>CURRICULUM VITAE</h1>
-      <div class="line"></div>
-      <div class="skills">
-        <ul class="skills-content" data-aos="zoom-in-up">
-          <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
-          <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
-          <li id="html"><%= image_tag "logo-html.png" %></a></li>
-          <li id="css"><%= image_tag "logo-css.png" %></a></li>
-          <li id="js"><%= image_tag "logo-js.png" %></a></li>
-          <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
-          <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
-        </ul>
-      </div>  
-      <div id="cv-link" >
-        <p>Mon profil vous intéresse ?</p>
-        <%= link_to "TÉLÉCHARGEZ LE CV" ,:action => :download_pdf_fr, :file_name => "TEST.pdf" %>    
-      </div>
-    </div>
-    
-  </div>
-  <div class="last-part">
-    <div id="footer" class="title">
-      <h1>CONTACT</h1>
-      <div class="line"></div>
-      <div class="footer-content">
-        <div class="ad-mail">
-          <ul>
-            <li class="ad-content">
-              <p>1618 Châtel-Saint-Denis<br/>
-              SUISSE</p>
-            </li>
-            <li class="mail-content">
-              <p>camille.lgrr@gmail.com</p>
-            </li>
-          </ul>
+    <div class="last-part">
+      <div id="footer" class="title">
+        <h1>CONTACT</h1>
+        <div class="line"></div>
+        <div class="footer-content">
+          <div class="ad-mail">
+            <ul>
+              <li class="ad-content">
+                <p>1618 Châtel-Saint-Denis<br/>
+                SUISSE</p>
+              </li>
+              <li class="mail-content">
+                <p>contact@camille-lgrr.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-list">
+            <ul>
+              <li id="address"><%= image_tag "address.png" %></li>
+              <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
+              <li id="email"><%= image_tag "email.png" %></li>
+              <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
+            </ul>
+          </div>
         </div>
-        <div class="contact-list">
-          <ul>
-            <li id="address"><%= image_tag "address.png" %></li>
-            <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
-            <li id="email"><%= image_tag "email.png" %></li>
-            <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
-          </ul>
-        </div>
-        
       </div>
     </div>
   </div>

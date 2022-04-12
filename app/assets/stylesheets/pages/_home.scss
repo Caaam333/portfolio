@@ -2,7 +2,10 @@
 #home-page {
   // padding: 100px;
   font-family: $mont;
-  width: 100vw;
+  // width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   h1 {
     color: $darker;
@@ -34,12 +37,24 @@ a {
   .line {
     margin-left: 20px;
   }
+
+  // #project, #cv, #footer {
+  //   max-width: 1200px;
+  // }
+}
+
+.centeer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // margin-left: auto;
+  //  margin-right: auto;
 }
 
 
 #header {
   background: url("header.png") no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,7 +83,7 @@ a {
         padding: 0px 2px;
         border: 1px solid white;
       }
-      
+
     }
   }
   
@@ -104,7 +119,7 @@ a {
       h2 {
         margin: 5px 20px;
       }
-      
+
     }
   }
 } 
@@ -128,10 +143,10 @@ a {
 
 .first-part {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   
   img {
     // margin-top: 100px;
@@ -140,6 +155,17 @@ a {
     object-fit: cover;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+
+  p {
+    // display: flex;
+    // flex-wrap: wrap;
+    max-height: 250px;
+    max-width: 700px;
+    column-count: 2;
+    column-width: 340px;
+    column-gap: 20px;
+    text-align: justify;
   }
 }
 
@@ -160,14 +186,14 @@ a {
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 25px;
+  // justify-content: center;
   // flex-direction: column;
 
-  p {
-    width: 340px;
-    // margin: 0px 10px;
-  }
+  // p {
+  //   max-width: 340px;
+  //   // margin: 0px 10px;
+  // }
 
   // p:last-child {
   //   margin-left: 20px;
@@ -187,11 +213,13 @@ a {
     max-width: 340px;
   }
 }
+
 .second-part {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  // justify-content: space-around;
+  // align-items: center;
   flex-wrap: wrap;
+  max-width: 1200px;
 }
 #project {
   // padding: 100px;
@@ -250,6 +278,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100vw;
+  max-width: 1200px;
 }
 #cv {
   display: flex;
@@ -284,6 +313,7 @@ a {
   img {
     // height: 10vw;
     height: calc(25px + 5vw);
+
   }
   ul {
     display: flex;
@@ -372,6 +402,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 1200px;
   }
 }
 

@@ -37,109 +37,111 @@
       </svg>
     </div>
   </div>
-  <div class="first-part">
-    <div id="about">
-      <h1>ABOUT</h1>
-      <div class="line"></div>
-      <div class="about-content">
-        <p class="row">
-          I'm Camille, I grew up in the Paris region, passionate, dance has punctuated my life. 
-          When I turn 30, I set myself a new challenge: cross the Swiss border and start from scratch.<br/>
-          New country, new environment, why not set new goals?
-          After 5 years at the SNCF, I felt ready to turn my career upside down and here I am launched in 
-          Le Wagon training to be a web developer.
-        </p>
-        <p class="row2">
-          These 6 months of training allowed me to develop my technical knowledge and my listening skills. 
-          It bothers me and makes me want to learn even more.
-          I am now ready to acquire a first professional experience.
-        </p>
-      </div>
-    </div>
-    <div class="profile-picture">
-      <%= image_tag "my_face.jpg" %>
-    </div>
-  </div>
-  <div class="second-part">
-    <div id="project">
-      <h1>PROJECTS</h1>
-      <div class="line"></div>
-      <div class="project-picture">
-        <div class="candiloc">
-          <a href="https://candiloc.herokuapp.com/" target="_blank"><%= image_tag "CANDILOC.png" %></a>
-          <div class="candi-content">
-            <h3>CANDILOC</h3>
-            <h4>Rent your favorite politician.</h4>
-            <p>
-              GOAL : creation of an "airbnb" type rental site with a completely different theme.
-              <br/>
-              Web application created as a team during my training at Le Wagon.<br/>
-            </p>
-          </div>
-        </div>
+  <div class="justify">
+    <div class="first-part">
+      <div id="about">
+        <h1>ABOUT</h1>
         <div class="line"></div>
-        <div class="pets">
-          <div class="pets-content">
-            <h3>PLACE FOR PETS</h3>
-            <h4>Vous partez en vacances ? Eux aussi.</h4>
-            <p>
-              GOAL : Realization of an application which calculates in real time the number of places remaining in pensions at a short distance of a journey according to the type of animal.
-              <br/>
-              Web application created as a team during my training at Le Wagon.<br/>
-            </p>
-          </div>
-          <%= image_tag "PLACE_FOR_PETS.png" %> 
+        <div class="about-content">
+          <p class="row">
+            I'm Camille, I grew up in the Paris region, passionate, dance has punctuated my life. 
+            When I turn 30, I set myself a new challenge: cross the Swiss border and start from scratch.<br/>
+            New country, new environment, why not set new goals?
+            After 5 years at the SNCF, I felt ready to turn my career upside down and here I am launched in 
+            Le Wagon training to be a web developer.
+          </p>
+          <p class="row2">
+            These 6 months of training allowed me to develop my technical knowledge and my listening skills. 
+            It bothers me and makes me want to learn even more.
+            I am now ready to acquire a first professional experience.
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="third-part">
-    <div id="cv">
-      <div>
-        <h1>CURRICULUM VITAE</h1>
-        <div class="line"></div>
-      </div>
-      <div class="skills">
-        <ul class="skills-content">
-          <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
-          <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
-          <li id="html"><%= image_tag "logo-html.png" %></a></li>
-          <li id="css"><%= image_tag "logo-css.png" %></a></li>
-          <li id="js"><%= image_tag "logo-js.png" %></a></li>
-          <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
-          <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
-          <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
-          <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
-          <li id="html"><%= image_tag "logo-html.png" %></a></li>
-          <li id="css"><%= image_tag "logo-css.png" %></a></li>
-          <li id="js"><%= image_tag "logo-js.png" %></a></li>
-          <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
-          <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
-        </ul>
-      </div>  
-      <div id="cv-link" >
-        <p>Interested ?</p>
-        <%= link_to "DOWNLOAD MY CV" ,:action => :download_pdf_en, :file_name => "TEST.pdf" %>    
+      <div class="profile-picture">
+        <%= image_tag "my_face.jpg" %>
       </div>
     </div>
-    
-  </div>
-  <div class="last-part">
-    <div id="footer">
-      <div>
-        <h1>CONTACT</h1>
+    <div class="second-part">
+      <div id="project">
+        <h1>PROJECTS</h1>
         <div class="line"></div>
+        <div class="project-picture">
+          <div class="candiloc">
+            <a href="https://candiloc.herokuapp.com/" target="_blank"><%= image_tag "CANDILOC.png" %></a>
+            <div class="candi-content">
+              <h3>CANDILOC</h3>
+              <h4>Rent your favorite politician.</h4>
+              <p>
+                GOAL : creation of an "airbnb" type rental site with a completely different theme.
+                <br/>
+                Web application created as a team during my training at Le Wagon.<br/>
+              </p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="pets">
+            <div class="pets-content">
+              <h3>PLACE FOR PETS</h3>
+              <h4>Vous partez en vacances ? Eux aussi.</h4>
+              <p>
+                GOAL : Realization of an application which calculates in real time the number of places remaining in pensions at a short distance of a journey according to the type of animal.
+                <br/>
+                Web application created as a team during my training at Le Wagon.<br/>
+              </p>
+            </div>
+            <%= image_tag "PLACE_FOR_PETS.png" %> 
+          </div>
+        </div>
       </div>
-      <div id="ad" class="cache">
-        adresse-mail@gmail.com
+    </div>
+    <div class="third-part">
+      <div id="cv">
+        <div>
+          <h1>CURRICULUM VITAE</h1>
+          <div class="line"></div>
+        </div>
+        <div class="skills">
+          <ul class="skills-content">
+            <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
+            <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
+            <li id="html"><%= image_tag "logo-html.png" %></a></li>
+            <li id="css"><%= image_tag "logo-css.png" %></a></li>
+            <li id="js"><%= image_tag "logo-js.png" %></a></li>
+            <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
+            <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
+            <li id="ruby"><%= image_tag "logo-ruby.png" %></li>
+            <li id="rails"><%= image_tag "logo-rails.png" %></a></li>
+            <li id="html"><%= image_tag "logo-html.png" %></a></li>
+            <li id="css"><%= image_tag "logo-css.png" %></a></li>
+            <li id="js"><%= image_tag "logo-js.png" %></a></li>
+            <li id="figma"><%= image_tag "logo-figma.png" %></a></li>
+            <li id="heroku"><%= image_tag "logo-heroku.png" %></a></li>
+          </ul>
+        </div>  
+        <div id="cv-link" >
+          <p>Interested ?</p>
+          <%= link_to "DOWNLOAD MY CV" ,:action => :download_pdf_en, :file_name => "TEST.pdf" %>    
+        </div>
       </div>
-      <div class="contact-list">
-        <ul>
-          <li id="address"><%= image_tag "address.png" %></li>
-          <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
-          <li id="email"><a href="#"><%= image_tag "email.png" %></a></li>
-          <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
-        </ul>
+      
+    </div>
+    <div class="last-part">
+      <div id="footer">
+        <div>
+          <h1>CONTACT</h1>
+          <div class="line"></div>
+        </div>
+        <div id="ad" class="cache">
+          adresse-mail@gmail.com
+        </div>
+        <div class="contact-list">
+          <ul>
+            <li id="address"><%= image_tag "address.png" %></li>
+            <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
+            <li id="email"><a href="#"><%= image_tag "email.png" %></a></li>
+            <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
