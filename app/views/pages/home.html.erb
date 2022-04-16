@@ -49,7 +49,7 @@
             Je suis Camille, j'ai grandi en Île-de-France, passionnée, la danse a rythmé ma vie. 
             À mes 30 ans, je me lance un nouveau défi : passer la frontière Suisse et repartir à zéro. <br/>
             Nouveau pays, nouvel environnement, pourquoi ne pas se fixer de nouveaux objectifs ?
-            
+
             Après 5 ans à la SNCF, je me sentais prête à bouleverser ma carrière et me voici lancée dans 
             la formation du Wagon pour être développeuse web.
             Ces 6 mois de formation m'ont permis de développer mon savoir technique et mon sens de l'écoute.
@@ -79,6 +79,8 @@
               <p>
                 OBJECTIF : création d'un site de location type "airbnb" avec un tout autre thème.
                 <br/>
+                TEMPS : 1 semaine
+                <br/>
                 Application web réalisée en équipe lors de ma formation au Wagon.<br/>
               </p>
             </div>
@@ -91,11 +93,13 @@
               <p>
                 OBJECTIF : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
                 <br/>
-                Application web réalisée en équipe lors de ma formation au Wagon.<br/>
+                TEMPS : 3 semaines
+                <br/>
+                Application web format mobile (390x844) réalisée en équipe lors de ma formation au Wagon.<br/>
               </p>
             </div>
             <div>
-              <%= image_tag "PLACE_FOR_PETS.png" %> 
+              <a href="https://www.placeforpets.xyz/" target="_blank"><%= image_tag "PLACE_FOR_PETS.png" %></a>
             </div>
           </div>
         </div>
@@ -127,23 +131,30 @@
         <h1>CONTACT</h1>
         <div class="line"></div>
         <div class="footer-content">
-          <div class="ad-mail">
+          <%# <div class="ad-mail">
             <ul>
               <li class="ad-content">
-                <p>1618 Châtel-Saint-Denis<br/>
+                <p  data-aos="zoom-out-down">1618 Châtel-Saint-Denis<br/>
                 SUISSE</p>
               </li>
               <li class="mail-content">
-                <p>contact@camille-lgrr.com</p>
+                <p data-aos="zoom-out-down">contact@camille-lgrr.com</p>
               </li>
             </ul>
-          </div>
+          </div> %>
           <div class="contact-list">
             <ul>
-              <li id="address"><%= image_tag "address.png" %></li>
-              <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/"><%= image_tag "linkedin.png" %></a></li>
-              <li id="email"><%= image_tag "email.png" %></li>
-              <li id="github"><a href="https://github.com/Caaam333"><%= image_tag "github.png" %></a></li>
+              <li id="address">
+                <%= image_tag "address.png" %> 
+                <%# <p class="ad-content">1618 Châtel-Saint-Denis<br/>
+                SUISSE</p> %>
+              </li>
+              <li id="linkedin"><a href="https://www.linkedin.com/in/camille-lgrr/" target="_blank"><%= image_tag "linkedin.png" %></a></li>
+              <li id="email">
+                <%= image_tag "email.png" %>
+                <%# <p class="mail-content">contact@camille-lgrr.com</p> %>
+              </li>
+              <li id="github"><a href="https://github.com/Caaam333" target="_blank"><%= image_tag "github.png" %></a></li>
             </ul>
           </div>
         </div>

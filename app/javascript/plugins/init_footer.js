@@ -1,28 +1,41 @@
 const initFooter = () => {
   const logoAddress = document.querySelector('#address > img');
-  const address = document.querySelector('.ad-content > p');
+  const address = document.querySelector('.ad-content > p').style.display='none';
 
   const logoEmail = document.querySelector('#email > img');
-  const email = document.querySelector('.mail-content > p');
+  const email = document.querySelector('.mail-content > p').style.display='none';
 
-  address.style.display = "none";
-  email.style.display = "none";
+  // address.style.display = "none";
+  // email.style.display = "none";
   
-  logoAddress.addEventListener('mouseover', () => {
-    address.style.display = "block";
-  })
+  // logoAddress.addEventListener('mouseover', () => {
+  //   address.style.display = "block";
+  // })
+
+  
   logoAddress.addEventListener('click', () => {
-    address.style.display = "block";
-  })
-  logoAddress.addEventListener('mouseleave', () => {
-    address.style.display = "none";
+    if(address.style.display === "none") {
+      address.style.display = "block";
+    }
+    else {
+      address.style.display = "none";
+    }
   })
 
-  logoEmail.addEventListener('mouseover', () => {
-    email.style.display = "block";
-  })
+  // logoAddress.addEventListener('mouseleave', () => {
+  //   address.style.display = "none";
+  // })
+
+  // logoEmail.addEventListener('mouseover', () => {
+  //   email.style.display = "block";
+  // })
   logoEmail.addEventListener('click', () => {
-    email.style.display = "block";
+    if(email.style.display === "none") {
+      email.style.display = "block";
+    }
+    else {
+      email.style.display = "none";
+    }
   })
 
   // logoEmail.addEventListener('mouseleave', () => {
