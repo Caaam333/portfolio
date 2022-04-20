@@ -369,27 +369,27 @@ a {
     padding-top: 20px;
   }
 
-  .ad-mail {
-    display: flex;
-    justify-content: center;
-    margin-right: 20px;
+  // .ad-mail {
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-right: 20px;
 
-    ul {
-      // display: flex;
-      list-style: none;
-      // text-align: center;
-      // align-items: center;
-    }
-    .ad-content {
-    //   // display: none;
-    //   // display: none;
-      text-align: right;
-    }
-    // .mail-content {
-    //   // display: none;
-    //   // display: none;
-    // }
-  }
+  //   ul {
+  //     // display: flex;
+  //     list-style: none;
+  //     // text-align: center;
+  //     // align-items: center;
+  //   }
+  //   .ad-content {
+  //   //   // display: none;
+  //   //   // display: none;
+  //     text-align: right;
+  //   }
+  //   // .mail-content {
+  //   //   // display: none;
+  //   //   // display: none;
+  //   // }
+  // }
 
   .contact-list {
     display: flex;
@@ -400,6 +400,8 @@ a {
     // margin-bottom: auto;
     ul {
       display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
       padding: 0px;
 
       // align-items: center;
@@ -411,12 +413,22 @@ a {
       display: inline;
       margin: 5px;
       text-align: center;
+      width: auto;
+      max-width: 190px;
+      min-width: 150px;
+      
+      p {
+        font-size: 1vw;
+        margin-top: 10px;
+        
+      }
     }
-    p {
-      font-size: 1em;
-      margin-top: 10px;
-
+    #linkedin {
+      .animate__fadeInUp {
+        --animate-delay: 3s;
+      }
     }
+    
   }
   .footer-content {
     display: flex;

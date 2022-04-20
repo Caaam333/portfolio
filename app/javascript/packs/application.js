@@ -27,6 +27,6 @@ document.addEventListener('turbolinks:load', () => {
   // initHide();
   initScrollTo();
   // initSkills();
-  initFooter();
+  // initFooter();
   AOS.init();
 })
