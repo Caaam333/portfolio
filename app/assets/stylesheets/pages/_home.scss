@@ -58,11 +58,14 @@ a {
     // display: flex;
     flex-direction: column;
     display: flex;
+    justify-content: right²;
     // align-items: center;
     // height: 100vh;
     // background: #fcf3ec;
     
     .cv-scroll > p {
+      margin-top: 25px;
+      margin-left: 25px;
       cursor: pointer;
       display: inline-block;
       height: 40px;
