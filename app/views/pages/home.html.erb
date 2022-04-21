@@ -1,8 +1,13 @@
 <div id="home-page" class="">
   <div id="header">
-    <div class="en-fr">
-      <%= link_to image_tag("france.png"), root_path, class:"active" %>
-      <%= link_to image_tag("uk.png"), english_path %>
+    <div class="header-links">
+      <div class="en-fr">
+        <%= link_to image_tag("france.png"), root_path, class:"active" %>
+        <%= link_to image_tag("uk.png"), english_path %>
+      </div>
+      <div class="cv-scroll">
+        <p>Préssé de voir mon CV ?</p>
+      </div>
     </div>
     <div id="name-title">
       <h1 id="name">Camille LAGUERRE</h1>
@@ -37,7 +42,7 @@
       </svg>
     </div>
   </div>
-  <div class="centeer">
+  <div>
     <div class="first-part">
       <div>
         <div id="about" class="title">
@@ -77,9 +82,9 @@
               <h3>CANDILOC</h3>
               <h4>Louez votre candidat politique préféré.</h4>
               <p>
-                OBJECTIF : création d'un site de location type "airbnb" avec un tout autre thème.
+                <span class="underline">OBJECTIF</span> : création d'un site de location type "airbnb" avec un tout autre thème.
                 <br/>
-                TEMPS : 1 semaine
+                <span class="underline">TEMPS</span> : 1 semaine
                 <br/>
                 Application web réalisée en équipe lors de ma formation au Wagon.<br/>
               </p>
@@ -91,9 +96,9 @@
               <h3>PLACE FOR PETS</h3>
               <h4>Vous partez en vacances ? Eux aussi.</h4>
               <p>
-                OBJECTIF : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
+                <span class="underline">OBJECTIF</span> : Réalisation d'une application qui calcule en temps réel le nombre de place restante dans des pensions à une courte distance d'un trajet en fonction du type d'animal.
                 <br/>
-                TEMPS : 3 semaines
+                <span class="underline">TEMPS</span> : 3 semaines
                 <br/>
                 Application web format mobile (390x844) réalisée en équipe lors de ma formation au Wagon.<br/>
               </p>
@@ -107,22 +112,26 @@
     </div>
     <div class="third-part">
       <div id="cv" class="title">
-        <h1>CURRICULUM VITAE</h1>
+        <h1>COMPÉTENCES</h1>
         <div class="line"></div>
         <div class="skills">
           <ul class="skills-content">
-            <li id="ruby" data-aos="zoom-in-up"><%= image_tag "logo-ruby.png" %></li>
+            <li id="ruby" data-aos="zoom-in-up"><%= image_tag "logo-ruby--.png" %></li>
             <li id="rails" data-aos="zoom-in-up" data-aos-delay="200"><%= image_tag "logo-rails.png" %></a></li>
             <li id="html" data-aos="zoom-in-up" data-aos-delay="250"><%= image_tag "logo-html.png" %></a></li>
             <li id="css" data-aos="zoom-in-up" data-aos-delay="300"><%= image_tag "logo-css.png" %></a></li>
             <li id="js" data-aos="zoom-in-up" data-aos-delay="350"><%= image_tag "logo-js.png" %></a></li>
-            <li id="figma" data-aos="zoom-in-up" data-aos-delay="400"><%= image_tag "logo-figma.png" %></a></li>
+            <li id="figma" data-aos="zoom-in-up" data-aos-delay="400"><%= image_tag "logo-figma--.png" %></a></li>
             <li id="heroku" data-aos="zoom-in-up" data-aos-delay="450"><%= image_tag "logo-heroku.png" %></a></li>
           </ul>
-        </div>  
-        <div id="cv-link" >
-          <p>Mon profil vous intéresse ?</p>
-          <%= link_to "TÉLÉCHARGEZ LE CV" ,:action => :download_pdf_fr, :file_name => "TEST.pdf" %>    
+        </div> 
+        <div class="cv">
+          <h1>CURRICULUM VITAE</h1> 
+          <div class="line"></div>
+          <div id="cv-link" >
+            <p>Mon profil vous intéresse ?</p>
+            <%= link_to "TÉLÉCHARGEZ LE CV", class:'glow-on-hover', :action => :download_pdf_fr, :file_name => "TEST.pdf" %>    
+          </div>
         </div>
       </div>
     </div>
@@ -146,24 +155,24 @@
             <ul>
               <li id="address">
                 <%= image_tag "address.png" %> 
-                <p  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">1618 Châtel-Saint-Denis<br/>
-                SUISSE</p>
+                <p  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="400" data-aos-offset="0">  1618 Châtel-Saint-Denis  <br/>
+                  SUISSE  </p>
               </li>
               <li id="linkedin">
                 <a href="https://www.linkedin.com/in/camille-lgrr/" target="_blank">
                   <%= image_tag "linkedin.png" %>
-                  <p  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">linkedin.com/in/camille-lgrr/</p>
+                  <p data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300" data-aos-offset="0">  linkedin.com/in/camille-lgrr  </p>
                 </a>
               </li>
               <li id="github">
                 <a href="https://github.com/Caaam333" target="_blank">
                   <%= image_tag "github.png" %>
-                  <p  data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">github.com/Caaam333</p>
+                  <p  data-aos="fade-down" data-aos-duration="3000" data-aos-delay="200" data-aos-offset="0">  github.com/Caaam333  </p>
                 </a>
               </li>
               <li id="email">
                 <%= image_tag "email.png" %>
-                <p  data-aos="fade-up" data-aos-duration="3000">contact@camille-lgrr.com</p>
+                <p  data-aos="fade-down" data-aos-duration="3000" data-aos-offset="0">  contact@camille-lgrr.com  </p>
               </li>
             </ul>
           </div>

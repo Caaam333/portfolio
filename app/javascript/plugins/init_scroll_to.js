@@ -1,13 +1,24 @@
 const initScrollTo = () => {
-  const scrollBtn = document.querySelector(".about-btn")
-  const scrollEnd = document.querySelector(".first-part")
+  const aboutBtn = document.querySelector(".about-btn")
+  const aboutEnd = document.querySelector(".first-part")
   
-  scrollBtn.addEventListener('click', () => {
+  const cvBtn = document.querySelector(".cv-scroll")
+  const cvEnd = document.querySelector(".cv")
+
+  aboutBtn.addEventListener('click', () => {
     // window.scrollTo({
     //   top: 900,
     //   behavior: "smooth"
     // })
-    scrollEnd.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    aboutEnd.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  })
+
+  cvBtn.addEventListener('click', () => {
+    // window.scrollTo({
+    //   top: 900,
+    //   behavior: "smooth"
+    // })
+    cvEnd.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   })
 }
 
