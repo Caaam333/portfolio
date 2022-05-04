@@ -1,4 +1,8 @@
 // Specific CSS for your home-page
+body {
+  overflow-x: hidden;
+}
+
 #home-page {
   // padding: 100px;
   font-family: $mont;
@@ -191,13 +195,6 @@ a {
     margin: 20px;
 
   }
-
-  p {
-    // display: flex;
-    // flex-wrap: wrap;
-   
-    
-  }
 }
 
 
@@ -230,6 +227,7 @@ a {
   width: 100vw;
   height: auto;
   padding: 20px;
+  overflow-x: hidden;
   // justify-content: center;
   // flex-direction: column;
 
