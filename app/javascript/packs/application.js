@@ -20,6 +20,7 @@ import "bootstrap"
 import { initScrollTo } from '../plugins/init_scroll_to';
 // import { initSkills } from '../plugins/init_skills';
 import { initFooter } from '../plugins/init_footer';
+import { initNavbar } from '../plugins/init_navbar';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -29,4 +30,5 @@ document.addEventListener('turbolinks:load', () => {
   // initSkills();
   // initFooter();
   AOS.init();
+  initNavbar();
 })
