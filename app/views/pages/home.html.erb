@@ -1,19 +1,20 @@
 <div id="home-page" class="">
-  <div id="header">
-    <div class="header-links">
-      <%# <div class="en-fr">
-        <%= link_to image_tag("france.png"), root_path, class:"active" %>
-        <%# <%= link_to image_tag("uk.png"), english_path %>
-      <%#</div> %>
-      <div class="cv-scroll">
-        <p>Préssé de voir mon CV ?</p>
-      </div>
-    </div>
-    <div id="name-title">
+  <div id="home-top-page">
+    <header>
+      <%= link_to image_tag("test-logo.png"), root_path, class:"logo" %>
+      <nav>
+        <a href="#" class="active">home</a>
+        <a class="cv-scroll">CV</a>
+        <a class="about-btn">A propos</a>
+        <a class="contact-btn">Contact</a>
+      </nav>
+    </header>
+    <div id="header">
+      <div id="name-title">
       <h1 id="name">Camille LAGUERRE</h1>
       <h2 id="job-title">DÉVELOPPEUSE WEB JUNIOR</h2>
     </div>
-    <div class="about-btn">
+    <div class="about-btn-svg">
       <svg version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <symbol id="d" overflow="visible">
@@ -41,12 +42,8 @@
         </g>
       </svg>
     </div>
+    </div>
   </div>
-  <%# <div id="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-  </div> %>
   <div>
     <div class="first-part">
       <div>
