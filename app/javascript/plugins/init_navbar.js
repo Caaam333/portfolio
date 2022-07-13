@@ -33,7 +33,6 @@ const initNavbar = () => {
 
     window.addEventListener('scroll', () => {
 
-      console.log(winH)
       if (window.scrollY > (winH - navH)) {
         header.classList.add("active");
       } else {
