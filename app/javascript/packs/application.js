@@ -21,6 +21,7 @@ import { initScrollTo } from '../plugins/init_scroll_to';
 // import { initSkills } from '../plugins/init_skills';
 import { initFooter } from '../plugins/init_footer';
 import { initNavbar } from '../plugins/init_navbar';
+import { initDropdown } from '../plugins/init_dropdown';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -31,4 +32,5 @@ document.addEventListener('turbolinks:load', () => {
   // initFooter();
   AOS.init();
   initNavbar();
+  initDropdown();
 })

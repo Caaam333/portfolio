@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  
+}
+
 #home-page {
   // padding: 100px;
   font-family: $mont;
@@ -44,14 +48,14 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   transition: 500ms;
   z-index: 1;
 }
 
 header.active {
   background: url("header.png") no-repeat;
-  width: 100%;
+  // width: 100;
   background-size: cover;
   background-position: center;
 }
@@ -60,6 +64,7 @@ header.active {
 
 nav {
   margin-right: 70px;
+  transition: 500ms;
 
   a {
     display: inline-block;
@@ -82,12 +87,59 @@ nav {
     color: white;
   }
 }
+
 .logo {
   flex: 1;
   font-size: 35px;
   margin-left: 70px;
+
   img {
     width: 80px;
+  }
+}
+
+.desktop-navbar {
+  display: flex;
+
+}
+
+.mobile-navbar {
+  display: none;
+  transition: 500ms;
+
+  .menu, .croix {
+    width: 25px;
+    transition: 500ms;
+    display: none;
+  }
+
+  // .menu {
+  //   display: none;    
+  // }
+
+  // .croix {
+  //   display: none;
+  // }
+
+  .nav-open {
+    display: flex;
+    transition: 500ms;
+    // -webkit-transition: all 0.5s ease-in-out;
+  }
+
+  // .transition{
+  //   -webkit-transition: all 0.5s ease-in-out;
+  //   -moz-transition:all 0.5s ease-in-out;
+  //   -o-transition:all 0.5s ease-in-out;
+  //   transition:all 0.5s ease-in-out;
+  // }
+  // .opacity {
+  //   opacity: 0;
+  //   -webkit-transition: all 0.5s ease-in-out;
+  // }
+  .mobile-nav-item {
+    display: none;
+
   }
 }
 
@@ -621,8 +673,9 @@ a {
 
 @media (max-width: 769px){
   header {
-    flex-direction: column;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   nav {
@@ -630,9 +683,26 @@ a {
     margin: 0;
   }
 
+  .logo {
+    margin-left: 0;
+  }
+
+  .first-part {
+    justify-content: center;
+  }
   .about-btn > svg {
     width: 50px;
     height: auto;
     transition: 500ms;
   }
+
+  .desktop-navbar {
+    display: none;
+
+  }
+
+  .mobile-navbar {
+    display: flex;
+  }
 }
+

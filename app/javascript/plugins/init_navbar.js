@@ -1,14 +1,3 @@
-// window.onscroll = function() {initNavbar()};
-
-// function initNavbar() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("navbar").style.top = "0";
-//     // document.getElementById("navbar").style.background = "url("header.png")";
-//   } else {
-//     document.getElementById("navbar").style.top = "-100px";
-//     // document.getElementById("navbar").style.background = "transparent";
-//   }
-// }
 
 
 const initNavbar = () => {
