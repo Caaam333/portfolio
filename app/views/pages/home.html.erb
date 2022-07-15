@@ -1,23 +1,27 @@
 <div id="home-page" class="">
   <div id="home-top-page">
     <header>
-      <%= link_to image_tag("test-logo.png"), root_path, class:"logo" %>
-      <nav class="desktop-navbar">
-        <a href="#" class="active">home</a>
-        <a class="cv-scroll">CV</a>
-        <a class="about-btn">A propos</a>
-        <a class="contact-btn">Contact</a>
-      </nav>
-      <nav class="mobile-navbar">
-        <%= image_tag "menu", class: "menu nav-open" %>
-        <%= image_tag "croix", class: "croix" %>
+      <div class="navbar">
+        <%= link_to image_tag("test-logo.png"), root_path, class:"logo" %>
+        <nav class="desktop-navbar">
+          <a href="#" class="active">home</a>
+          <a class="cv-scroll">CV</a>
+          <a class="about-btn">A propos</a>
+          <a class="contact-btn">Contact</a>
+        </nav>
+        <nav class="mobile-navbar">
+          <%= image_tag "menu", class: "menu nav-open" %>
+          <%= image_tag "croix", class: "croix" %>
+        </nav>
+      </div>
+      <div class="nav-list">
         <ul class="mobile-nav-item">
           <li> <a href="#" class="active">home</a></li>
           <li><a class="cv-scroll">CV</a></li>
           <li><a class="about-btn">A propos</a></li>
           <li><a class="contact-btn">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <div id="header">
       <div id="name-title">

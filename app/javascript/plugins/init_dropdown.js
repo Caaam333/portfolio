@@ -2,6 +2,7 @@ const initDropdown = () => {
   const mobileBtn = document.querySelector('.mobile-nav')
   const menuBtn = document.querySelector('.menu')
   const croixBtn = document.querySelector('.croix')
+  const navList = document.querySelector('.nav-list')
 
   // mobileBtn.addEventListener('click', () => {
 
@@ -14,18 +15,41 @@ const initDropdown = () => {
   //   }
   // })
 
-  mobileBtn.addEventListener('click', () => {
-
-    // if (menuBtn.style.display === "none") {
-      // menuBtn.classList.toggle("opacity")
-      menuBtn.classList.toggle("nav-open")
-      // croixBtn.classList.toggle("opacity")
-      croixBtn.classList.toggle("nav-open")
-    // } else {
-    //   menuBtn.classList.toggle("nav-open")
-    //   croixBtn.style.display = "flex";
-    // }
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle("nav-open")
+    croixBtn.classList.toggle("nav-open") 
+    navList.style.display = "flex";
   })
+  
+  croixBtn.addEventListener('click', () => {
+    croixBtn.classList.toggle("nav-open")
+    menuBtn.classList.toggle("nav-open")
+    navList.style.display = "none";
+  })
+  
+  // if (menuBtn.classList.contains("nav-open")) {
+  //   console.log("c'est flex")
+  // }
+  
+  
+  
+  // // if (menuBtn.style.display === "none") {
+  //   // menuBtn.classList.toggle("opacity")
+  //   
+  //   // croixBtn.classList.toggle("opacity")
+  //   
+  // // } else {
+  //   menuBtn.classList.toggle("nav-open")
+  //   croixBtn.style.display = "flex";
+  // }
+  // if (menuBtn.style.display === "flex") {
+  //   // navList.style.display = "none";
+  //   console.log("menuBTN flex")
+  // } else {
+  //   // navList.style.display = "flex";
+  //   console.log("menuBTN none")
+  // }
+
 }
 
 
