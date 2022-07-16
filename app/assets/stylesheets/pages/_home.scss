@@ -15,26 +15,18 @@ ul {
   padding: 0;
 }
 
-li {
-  // list-style: none;
-  // text-decoration: none;
-}
-
 a {
   text-decoration: none;
 }
 
 #home-page {
-  // padding: 100px;
   font-family: $mont;
-  // width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   h1 {
     color: $darker;
-
   }
 
   .line {
@@ -46,30 +38,33 @@ a {
 
 #home-top-page {
   background: url("header.png") no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  object-fit: cover;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   padding: 10px;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  transition: 500ms;
+  // transition: background 500ms ease-in-out;
   z-index: 1;
+  background: transparent;
 }
 
 header.active {
   background: url("header.png") no-repeat;
-  // width: 100;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  object-fit: cover;
 }
 
 .navbar {
@@ -77,6 +72,7 @@ header.active {
   justify-content: space-between;
   width: 100vw;
   padding: 0px 20px;
+  position: sticky;
 }
 
 
@@ -112,7 +108,7 @@ a {
   margin-left: 70px;
 
   img {
-    width: 80px;
+    width: 65px;
   }
 }
 
@@ -135,31 +131,9 @@ a {
       transition: 500ms;
       // -webkit-transition: all 0.5s ease-in-out;
     }
-  }
-
-  // .menu {
-  //   display: none;    
-  // }
-
-  // .croix {
-  //   display: none;
-  // }
-
-  
-  
-
-  // .transition{
-  //   -webkit-transition: all 0.5s ease-in-out;
-  //   -moz-transition:all 0.5s ease-in-out;
-  //   -o-transition:all 0.5s ease-in-out;
-  //   transition:all 0.5s ease-in-out;
-  // }
-  // .opacity {
-  //   opacity: 0;
-  //   -webkit-transition: all 0.5s ease-in-out;
-  // }
-  
+  }  
 }
+
 .mobile-nav-item {
   display: flex;
   flex-direction: column;
@@ -328,6 +302,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  scroll-margin-top: 100px;
   
   img {
     // // margin-top: 100px;
@@ -538,7 +513,7 @@ a {
   background: url("header.png") no-repeat;
   background-size: cover;
   // background-repeat: no-repeat;
-  // background-position: center;
+  background-position: bottom;
 }
 
 #footer {
