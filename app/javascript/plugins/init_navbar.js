@@ -25,18 +25,7 @@ const initNavbar = () => {
       navbar.classList.remove("active");
     }
   })
-
-  // window.addEventListener('scroll', () => {
-
-  //   console.log(test)
-
-  //   // if (firstPart.scrollY) {
-  //   //  header.classList.add("active");
-  //   // } else {
-  //   //  header.classList.remove("active");
-  //   // }
-
-  //  })   
+  
         
   }
       
